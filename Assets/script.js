@@ -128,8 +128,6 @@ async function weatherForecast(city){
 }
 
     function history(){
-        /* localStorage.setItem("city", searchInput.value);
-        const city = localStorage.getItem("city"); */
         var searchValue = searchInput.value.trim();
         var searches = JSON.parse(localStorage.getItem("searches")) || [];
         searches.push(searchValue);
@@ -145,8 +143,8 @@ async function weatherForecast(city){
     for (let i = 0; i < searches.length; i++) {
         var searchButton = document.createElement("button");
         searchButton.textContent = searches[i];
-       /*  searchHistoryDiv.appendChild("searchButton"); */
-    }
+/*         searchHistoryDiv.appendChild(searchButton);
+ */    }
 }
 displaySearchHistory();
 

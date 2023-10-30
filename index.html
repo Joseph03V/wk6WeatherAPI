@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Weather DashBoard</title>
+        <link rel="stylesheet" href="./Assets/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Weather DashBoard</h1>
+        </header>
+
+    
+    <div class="container1">
+
+        <div class="searchDiv">
+            <h2 class="sfac" >Search For a City: </h2>
+            <input id="search" class="searchBox" type="search" placeholder="Where to?">
+            <button id="searchBtn" class="searchBtn">Search</button>
+
+        <div class="preCitys">
+            
+        </div>
+
+        </div>
+
+
+        <div class="infoDiv">
+            <div>
+                <h1 class="city"></h1>
+                <img id="icon">
+                <p>Temperature: </p><h3 class="temp"></h3>
+                <p>Wind Speed: </p><h3 class="wind"></h3>
+                <p>Humidity: </p><h3 class="humidity"></h3>
+            </div>
+        </div>
+
+
+        <div class="forecastDiv">
+            <h2 class="fiveheader">5-Day Forecast: </h2>
+            
+            <div class="container2">
+                <div class="forecast">
+                    <h4>Date: </h4>
+                    <P class="date2"></P>
+                    <img id="icon2">
+                    <h4>Temp: </h4>
+                    <P class="temp2"></P>
+                    <h4>Wind: </h4>
+                    <p class="wind2"></p>
+                    <h4>Humidity: </h4>
+                    <p class="humidity2"></p>
+                </div>
+            
+
+                <div class="forecast">
+                    <h4>Date: </h4>
+                    <P class="date3"></P>
+                    <img id="icon3">
+                    <h4>Temp: </h4>
+                    <P class="temp3"></P>
+                    <h4>Wind: </h4>
+                    <p class="wind3"></p>
+                    <h4>Humidity: </h4>
+                    <p class="humidity3"></p>
+                </div>
+
+
+                <div class="forecast">
+                    <h4>Date: </h4>
+                    <P class="date4"></P>
+                    <img id="icon4">
+                    <h4>Temp: </h4>
+                    <P class="temp4"></P>
+                    <h4>Wind: </h4>
+                    <p class="wind4"></p>
+                    <h4>Humidity: </h4>
+                     <p class="humidity4"></p>
+                </div>
+
+
+                <div class="forecast">
+                    <h4>Date: </h4>
+                    <P class="date5"></P>
+                    <img id="icon5">
+                    <h4>Temp: </h4>
+                    <P class="temp5"></P>
+                    <h4>Wind: </h4>
+                    <p class="wind5"></p>
+                    <h4>Humidity: </h4>
+                    <p class="humidity5"></p>
+                </div>
+
+
+                <div class="forecast">
+                    <h4>Date: </h4>
+                    <P class="date6"></P>
+                    <img id="icon6">
+                    <h4>Temp: </h4>
+                    <P class="temp6"></P>
+                    <h4>Wind: </h4>
+                    <p class="wind6"></p>
+                    <h4>Humidity: </h4>
+                    <p class="humidity6"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+        <script src="./Assets/script.js"> </script>
+<!--         <script src="api.openweathermap.org/data/2.5/weather?q={city name}&appid={9ffc0de74804e28fa563c8d76888af4e}"></script>
+ -->    </body>
+</html>

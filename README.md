@@ -19,4 +19,4 @@ I learned about local storage and how to get exactly what i need from JSON files
 ![Alt text](<./Assets/Screenshot 2023-10-30 211312.png>)
 
 ## Link to application
-[a link] ()
+[a link] (https://joseph03v.github.io/wk6WeatherAPI/)

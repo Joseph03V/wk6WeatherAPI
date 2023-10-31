@@ -136,15 +136,21 @@ async function weatherForecast(city){
         displaySearchHistory();
 }
     function displaySearchHistory() {
-    var searchHistoryDiv = document.getElementById("#preCitys");
-    searchHistoryDiv = " ";
+    var searchHistoryDiv = document.querySelectorAll("#preCitys");
+   /*  searchHistoryDiv = " "; */
     var searches = JSON.parse(localStorage.getItem("searches")) || [];
 
     for (let i = 0; i < searches.length; i++) {
         var searchButton = document.createElement("button");
         searchButton.textContent = searches[i];
-/*         searchHistoryDiv.appendChild(searchButton);
- */    }
+        let searchDiv = document.createElement("div")
+        searchDiv.appendChild(searchButton);
+        console.log(searches);
+        /* fix this statement to run only when certain values are not already included in the array called searches */
+        if(searches.includes(searches[i])){
+            searchHistoryDiv[0].append(searchDiv)
+        }
+}
 }
 displaySearchHistory();
 
